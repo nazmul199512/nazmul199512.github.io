@@ -2,63 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nazmul Alam - Software Developer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #222;
       margin: 0;
       padding: 0;
-      text-align: center;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     header {
-      background: #007acc;
+      background-color: #007acc;
       color: white;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0 0;
+      font-weight: 300;
+      font-size: 1.2rem;
     }
 
     main {
-      padding: 2rem;
+      padding: 2rem 1rem;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-top: 1rem;
+      border-radius: 6px;
     }
 
-    footer {
-      background: #333;
-      color: white;
-      padding: 1rem 0;
-      margin-top: 2rem;
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.5rem;
+      color: #007acc;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
     }
 
     a {
       color: #007acc;
       text-decoration: none;
+      font-weight: 600;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    footer {
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 1rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    .contact-info p {
+      margin: 0.3rem 0;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+    }
+
+    .skills-list span {
+      background-color: #e1f0ff;
+      color: #007acc;
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Hello! I'm Nazmul</h1>
-    <p>Welcome to my personal website</p>
+    <h1>Nazmul Alam</h1>
+    <p>Software Developer | PHP, Laravel, React.js, Microservices | Dhaka, Bangladesh</p>
   </header>
 
   <main>
-    <h2>About Me</h2>
-    <p>This is a simple site hosted using GitHub Pages. I’m learning how to build and host websites!</p>
+    <section class="summary">
+      <h2>About Me</h2>
+      <p>
+        Results-driven Software Developer with over 5 years of experience specializing in PHP, Laravel, and WordPress.
+        Skilled in building scalable microservice-based enterprise applications, cloud & DevOps practices, and
+        creating dynamic user interfaces with React.js. Passionate about clean code, domain-driven design, and
+        continuous learning.
+      </p>
+    </section>
 
-    <h3>Connect with Me</h3>
-    <p>
-      <a href="https://github.com/nazmul199512" target="_blank">My GitHub Profile</a>
-    </p>
+    <section class="contact-info">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:nazmul199512@gmail.com">nazmul199512@gmail.com</a></p>
+      <p>Phone: +8801798128799</p>
+      <p>Location: Dhaka, Bangladesh</p>
+      <p>
+        <a href="https://linkedin.com/in/nazmul" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="https://github.com/nazmul199512" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <span>PHP</span>
+        <span>Laravel</span>
+        <span>WordPress</span>
+        <span>React.js</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>HTML5</span>
+        <span>CSS3 / SCSS</span>
+        <span>NestJS</span>
+        <span>MySQL</span>
+        <span>MongoDB</span>
+        <span>Redis</span>
+        <span>RabbitMQ</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>AWS (EC2, S3, RDS)</span>
+        <span>Jenkins</span>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h2>Professional Experience</h2>
+      <h3>Full Stack Developer - Miaki Media Ltd (Dec 2024 – Present)</h3>
+      <ul>
+        <li>Developing and maintaining microservices-based enterprise applications using Laravel and NestJS.</li>
+        <li>Key contributor to the "E Voucher" digital recharge card project.</li>
+        <li>Optimized databases including MySQL and MongoDB for scalability and performance.</li>
+      </ul>
+
+      <h3>PHP Developer - SSL Wireless (Nov 2021 – Nov 2024)</h3>
+      <ul>
+        <li>Built and maintained SSLCommerz WordPress Plugin for secure WooCommerce payments.</li>
+        <li>Developed Scratch Card Management and Employee Management Systems using Laravel.</li>
+        <li>Implemented scalable Event Sourcing and CQRS system for a Swiss insurance company.</li>
+      </ul>
+
+      <h3>Web Developer - iHelpBD (Apr 2021 – Oct 2021)</h3>
+      <ul>
+        <li>Created a Learning Management System with Laravel, AWS, and React.</li>
+      </ul>
+
+      <h3>Software Developer - Aims Edu Online (Jan 2020 – Dec 2020)</h3>
+      <ul>
+        <li>Developed Sales Mapping application for real-time analytics and tracking.</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p>Bachelor of Science in Computer Science and Engineering</p>
+      <p>Daffodil International University, Dhaka, Bangladesh</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Nazmul. All rights reserved.</p>
+    <p>&copy; 2025 Nazmul Alam. All rights reserved.</p>
   </footer>
 </body>
 </html>
